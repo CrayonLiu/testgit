@@ -3,6 +3,31 @@
 using namespace std;
 using namespace cv;
 
+void LeonGrayMatImageToBlockSumIntMat(unsigned char * SrcImageData, Mat DetIntMat, int width, int height)
+{
+    int i, j;
+    int col;
+    int row;
+
+    col = width;
+    row = height;
+
+    //compute process
+    for (i = 0; i < col; i++)
+    {
+        for (j = 0; j < row; j++)
+        {
+            // R pixel
+            DetIntMat.at<cv::Vec3b>(j, i)[0] = SrcImageData[j* 3* col + i];
+            // G pixel
+            DetIntMat.at<cv::Vec3b>(j, i)[1] = SrcImageData[j* 3* col + i + 1];
+            // B pixel
+            DetIntMat.at<cv::Vec3b>(j, i)[2] = SrcImageData[j* 3* col + i + 2];
+        }
+    }
+
+    return ;
+}                                                                                                                         
 
 int main()
 {
