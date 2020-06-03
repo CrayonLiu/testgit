@@ -1,0 +1,3 @@
+/home/crayon/shm_demo/200408/imageconvert/CMakeFiles/rebuild_cache.dir
+/home/crayon/shm_demo/200408/imageconvert/CMakeFiles/bestslot1106.dir
+/home/crayon/shm_demo/200408/imageconvert/CMakeFiles/edit_cache.dir
