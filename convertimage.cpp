@@ -31,6 +31,7 @@ void LeonGrayMatImageToBlockSumIntMat(unsigned char * SrcImageData, Mat DetIntMa
 
 int main()
 {
+    printf("hello\n");
     char fname[255];
     char fname_2[255];
     for (int i = 0 ;i < 243; ++i) {
